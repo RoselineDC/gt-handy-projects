@@ -17,46 +17,13 @@ export default function Page() {
 
   return (
     <>
-      <div className="flex-1 flex flex-col">
-        <UpNavBar toggleSidebar={() => setShowSidebar(!showSidebar)} />
-       
-      </div>
-      <div className="flex-1 flex overflow-hidden">
-        
-      <div className="flex  overflow-hidden">
-        {showSidebar && (
-          <Sidebar>
-            
-            <SidebarHeader>
-              <div className="text-gray-400 font-small text-lg">Main Menu</div>
-            </SidebarHeader>
-
-            <SidebarBody>
-              <SidebarItem
-                label="Home"
-              />
-              <SidebarItem
-                label="About Us"
-              >                
-              </SidebarItem>
-              <SidebarItem
-                label="Services"
-                // icon={<BookType className="w-5 h-5" />}
-              >
-              </SidebarItem>
-              <SidebarItem
-                label="Portifolio"
-                // icon={<SquarePen className="w-5 h-5" />}
-              />
-            </SidebarBody>
-          </Sidebar>
-        )}
-      </div>
+      
        <main className="flex-1 overflow-y-auto p-6 bg-white">
-       <Hero />
+          <UpNavBar toggleSidebar={() => setShowSidebar(!showSidebar)} />
+       {/* <Hero /> */}
          
         </main>
-      </div>
+      
     </>
   );
 }
