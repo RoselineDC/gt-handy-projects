@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import logo from "../images/gt_handy_projects_logo-removebg-preview.png";
+
 
 export default function UpNavBar({
   toggleSidebar,
@@ -10,6 +10,7 @@ export default function UpNavBar({
   toggleSidebar: () => void;
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const logo = "/images/logo.png";
 
   return (
     <>
